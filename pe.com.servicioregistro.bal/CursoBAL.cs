@@ -1,4 +1,6 @@
-﻿using System;
+﻿using pe.com.servicioregistro.bo;
+using pe.com.servicioregistro.dal;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +8,35 @@ using System.Threading.Tasks;
 
 namespace pe.com.servicioregistro.bal
 {
-    internal class CursoBAL
+    public class CursoBAL
     {
+        CursoDAL dalcur = new CursoDAL();
+
+        public List<CursoBO> MostrarCurso()
+        {
+            return dalcur.MostrarCurso();
+        }
+
+        public List<CursoBO> MostrarCursoTodo()
+        {
+            return dalcur.MostrarCurso();
+        }
+
+        public bool RegistrarCurso(CursoBO bc)
+        {
+            return dalcur.EliminarCurso(bc);
+
+        }
+
+        public bool ActualizarCurso(CursoBO bc)
+        {
+            return dalcur.ActualizarCurso(bc);
+
+        }
+        public bool EliminarCurso(CursoBO bc)
+        {
+            return dalcur.EliminarCurso(bc);
+
+        }
     }
 }

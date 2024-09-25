@@ -48,5 +48,15 @@
     <Compile Include="ProfesorBAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\pe.com.servicioregistro.bo\pe.com.servicioregistro.bo.csproj">
+      <Project>{8b8277f0-e979-4505-bf89-f5dd344f8cf0}</Project>
+      <Name>pe.com.servicioregistro.bo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\pe.com.servicioregistro.dal\pe.com.servicioregistro.dal.csproj">
+      <Project>{95af0705-6b05-47d2-81c6-48350e60d53b}</Project>
+      <Name>pe.com.servicioregistro.dal</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
