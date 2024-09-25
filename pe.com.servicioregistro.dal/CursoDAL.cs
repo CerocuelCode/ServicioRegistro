@@ -23,7 +23,7 @@ namespace pe.com.servicioregistro.dal
         //funcion que muestra todos los datos activos de Curso
         public List<CursoBO> MostrarCurso()
         {
-            List<CursoBO> curso = new List<CursoBO>();
+            List<CursoBO> cursos = new List<CursoBO>();
             try
             {
                 cmdcur = new SqlCommand();
@@ -47,9 +47,9 @@ namespace pe.com.servicioregistro.dal
                     objanio.codigo = Convert.ToInt32(drcur["codAnioAcademico"].ToString());
                     objcur.anioAcademico = objanio;
 
-                    curso.Add(objcur);
+                    cursos.Add(objcur);
                 }
-                return curso;
+                return cursos;
             }
             catch (Exception ex)
             {
@@ -65,7 +65,7 @@ namespace pe.com.servicioregistro.dal
         //funcion para mostrar todos los cursos (Activos o Inactivos)
         public List<CursoBO> MostrarCursoTodo()
         {
-            List<CursoBO> curso = new List<CursoBO>();
+            List<CursoBO> cursos = new List<CursoBO>();
             try
             {
                 cmdcur = new SqlCommand();
@@ -89,9 +89,9 @@ namespace pe.com.servicioregistro.dal
                     objanio.codigo = Convert.ToInt32(drcur["codAnioAcademico"].ToString());
                     objcur.anioAcademico = objanio;
 
-                    curso.Add(objcur);
+                    cursos.Add(objcur);
                 }
-                return curso;
+                return cursos;
             }
             catch (Exception ex)
             {
@@ -152,6 +152,7 @@ namespace pe.com.servicioregistro.dal
                 cmdcur.CommandText = "SP_ActualizarCurso";
                 cmdcur.Connection = objconexion.Conectar();
 
+                cmdcur.Parameters.AddWithValue("@codCurso", bc.codigo);
                 cmdcur.Parameters.AddWithValue("@nomCurso", bc.nombre);
                 cmdcur.Parameters.AddWithValue("@codProf", bc.profesor.codigo);
                 cmdcur.Parameters.AddWithValue("@codAnioAcademico", bc.anioAcademico.codigo);
