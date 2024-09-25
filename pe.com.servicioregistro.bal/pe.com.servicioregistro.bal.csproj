@@ -41,6 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlumnoBAL.cs" />
+    <Compile Include="AnioAcademicoBAL.cs" />
+    <Compile Include="CalificacionBAL.cs" />
+    <Compile Include="CursoBAL.cs" />
+    <Compile Include="ProfesorBAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
