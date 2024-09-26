@@ -19,12 +19,12 @@ namespace pe.com.servicioregistro.bal
 
         public List<ProfesorBO> MostrarProfesorTodo()
         {
-            return dalpro.MostrarProfesor();
+            return dalpro.MostrarProfesorTodo();
         }
 
         public bool RegistrarProfesor(ProfesorBO bp)
         {
-            return dalpro.EliminarProfesor(bp);
+            return dalpro.RegistrarProfesor(bp);
 
         }
 

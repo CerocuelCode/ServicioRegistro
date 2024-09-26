@@ -1,0 +1,6 @@
+D:\Repositorios\ServicioRegistro\pe.com.servicioregistro.bo\bin\Debug\pe.com.servicioregistro.bo.dll
+D:\Repositorios\ServicioRegistro\pe.com.servicioregistro.bo\bin\Debug\pe.com.servicioregistro.bo.pdb
+D:\Repositorios\ServicioRegistro\pe.com.servicioregistro.bo\obj\Debug\pe.com.servicioregistro.bo.csproj.AssemblyReference.cache
+D:\Repositorios\ServicioRegistro\pe.com.servicioregistro.bo\obj\Debug\pe.com.servicioregistro.bo.csproj.CoreCompileInputs.cache
+D:\Repositorios\ServicioRegistro\pe.com.servicioregistro.bo\obj\Debug\pe.com.servicioregistro.bo.dll
+D:\Repositorios\ServicioRegistro\pe.com.servicioregistro.bo\obj\Debug\pe.com.servicioregistro.bo.pdb

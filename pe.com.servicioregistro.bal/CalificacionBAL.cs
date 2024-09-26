@@ -19,12 +19,12 @@ namespace pe.com.servicioregistro.bal
 
         public List<CalificacionBO> MostrarCalificacionTodo()
         {
-            return dalcal.MostrarCalificacion();
+            return dalcal.MostrarCalificacionTodo();
         }
 
         public bool RegistrarCalificacion(CalificacionBO bc)
         {
-            return dalcal.EliminarCalificacion(bc);
+            return dalcal.RegistrarCalificacion(bc);
 
         }
 

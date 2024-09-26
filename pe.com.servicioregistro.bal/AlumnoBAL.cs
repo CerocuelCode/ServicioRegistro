@@ -19,12 +19,12 @@ namespace pe.com.servicioregistro.bal
 
         public List<AlumnoBO> MostrarAlumnoTodo()
         {
-            return dalalum.MostrarAlumno();
+            return dalalum.MostrarAlumnoTodo();
         }
 
         public bool RegistrarAlumno(AlumnoBO ba)
         {
-            return dalalum.EliminarAlumno(ba);
+            return dalalum.RegistrarAlumno(ba);
 
         }
 

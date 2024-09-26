@@ -19,12 +19,12 @@ namespace pe.com.servicioregistro.bal
 
         public List<AnioAcademicoBO> MostrarAnioAcademicoTodo()
         {
-            return dalanio.MostrarAnioAcademico();
+            return dalanio.MostrarAnioAcademicoTodo();
         }
 
         public bool RegistrarAnioAcademico(AnioAcademicoBO baa)
         {
-            return dalanio.EliminarAnioAcademico(baa);
+            return dalanio.RegistrarAnioAcademico(baa);
 
         }
 

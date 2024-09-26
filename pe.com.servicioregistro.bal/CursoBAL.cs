@@ -19,12 +19,12 @@ namespace pe.com.servicioregistro.bal
 
         public List<CursoBO> MostrarCursoTodo()
         {
-            return dalcur.MostrarCurso();
+            return dalcur.MostrarCursoTodo();
         }
 
         public bool RegistrarCurso(CursoBO bc)
         {
-            return dalcur.EliminarCurso(bc);
+            return dalcur.RegistrarCurso(bc);
 
         }
 
